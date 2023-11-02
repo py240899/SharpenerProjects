@@ -23,6 +23,8 @@ header.style.borderBottom = "solid 3px #000";
 // console.log(title);
 // title.style.color = "green";
 
+//GET ELEMENT BY CLASS NAME
+
 var items = document.getElementsByClassName('list-group-item')
 console.log(items);
 console.log(items[2]);
@@ -37,3 +39,11 @@ for(var i=0;i<items.length;i++){
 for(var i=0;i<items.length;i++){
     items[i].style.fontWeight ="bold";
 }
+
+//GET ELEMENTS BY TAG NAME  
+
+var items = document.getElementsByClassName('new-list-group-item');
+console.log(items);
+items[0].textContent = 'Hello new item';
+items[0].style.fontWeight = "bold";
+items[0].style.backgroundColor = "blue";
